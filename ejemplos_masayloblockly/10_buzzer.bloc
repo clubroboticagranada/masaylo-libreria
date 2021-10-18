@@ -1,0 +1,340 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <toolbox>toolbox_6</toolbox>
+  <block type="masaylo_arranca" id="+XhJBd1faJ?}k}dH)lq_" x="244" y="29">
+    <next>
+      <block type="masaylo_BUZZER_INIT" id="ye#^TuQRo@1w/YHZ.C(u">
+        <field name="buzzer">1</field>
+        <next>
+          <block type="variables_const" id="-*Fn.8iQO8N5BfEUy|)4">
+            <field name="VAR">do</field>
+            <field name="VARIABLE_SETTYPE_TYPE">NUMBER</field>
+            <value name="VAL_CONST">
+              <block type="math_number" id="17Fe_lADTe$Al(wM48FE">
+                <field name="NUM">261</field>
+              </block>
+            </value>
+            <next>
+              <block type="variables_const" id="%ZlaKS/eX3JBJ6q$93q0">
+                <field name="VAR">re</field>
+                <field name="VARIABLE_SETTYPE_TYPE">NUMBER</field>
+                <value name="VAL_CONST">
+                  <block type="math_number" id="0OTMsr_z#BZaB!rLDM5:">
+                    <field name="NUM">293</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="variables_const" id="qsp[YDp;|6E5=.QfB~Iw">
+                    <field name="VAR">mi</field>
+                    <field name="VARIABLE_SETTYPE_TYPE">NUMBER</field>
+                    <value name="VAL_CONST">
+                      <block type="math_number" id="o8]PVKs/S{bTqB1VKO5P">
+                        <field name="NUM">329</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="variables_const" id=":#yk*OM[p-,E{0bLk5:^">
+                        <field name="VAR">fa</field>
+                        <field name="VARIABLE_SETTYPE_TYPE">NUMBER</field>
+                        <value name="VAL_CONST">
+                          <block type="math_number" id="@s?g-#Dn0J=^CdQ0u@=5">
+                            <field name="NUM">349</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="variables_const" id="R(+gjH@JE+{)G;?z8p*4">
+                            <field name="VAR">sol</field>
+                            <field name="VARIABLE_SETTYPE_TYPE">NUMBER</field>
+                            <value name="VAL_CONST">
+                              <block type="math_number" id="m_3_R=.#2s!60uz_`)`!">
+                                <field name="NUM">392</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="variables_const" id="dLU4oHX}r5ryZ#8D=6)b">
+                                <field name="VAR">la</field>
+                                <field name="VARIABLE_SETTYPE_TYPE">NUMBER</field>
+                                <value name="VAL_CONST">
+                                  <block type="math_number" id="sSdJ7:KHOjSuQo$8CBlg">
+                                    <field name="NUM">440</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="variables_const" id=",IR0PNWM%21oU5H;e6(M">
+                                    <field name="VAR">si</field>
+                                    <field name="VARIABLE_SETTYPE_TYPE">NUMBER</field>
+                                    <value name="VAL_CONST">
+                                      <block type="math_number" id="uwSw`}?qN^Tku6{:.-e[">
+                                        <field name="NUM">493</field>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="variables_const" id="#)-Pz;;,=Gkl6$SM/oIz">
+                                        <field name="VAR">duracion</field>
+                                        <field name="VARIABLE_SETTYPE_TYPE">NUMBER</field>
+                                        <value name="VAL_CONST">
+                                          <block type="math_number" id="v!=L3If18z1w0N8+?LEp">
+                                            <field name="NUM">500</field>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="variables_const" id="gt#3Vpc8rX-tp]GpPPzt">
+                                            <field name="VAR">retardo</field>
+                                            <field name="VARIABLE_SETTYPE_TYPE">NUMBER</field>
+                                            <value name="VAL_CONST">
+                                              <block type="math_number" id="8d%SvSx1[EsX191:{zk{">
+                                                <field name="NUM">100</field>
+                                              </block>
+                                            </value>
+                                            <next>
+                                              <block type="masaylo_BUZZER_PLAY" id="[@z`c[uO`_n[a*X78#(_">
+                                                <value name="frecuencia">
+                                                  <shadow type="math_number" id="6HjZyOm6q9Rpq+q:sXd-">
+                                                    <field name="NUM">1000</field>
+                                                  </shadow>
+                                                  <block type="variables_get" id="TxaB_$^j/y;+-Z[e.y9j">
+                                                    <field name="VAR">do</field>
+                                                  </block>
+                                                </value>
+                                                <value name="duracion">
+                                                  <shadow type="math_number" id="KYrUYH#rEbMP%D[}D4wr">
+                                                    <field name="NUM">1000</field>
+                                                  </shadow>
+                                                  <block type="variables_get" id="QUd/oud8BZ7:sm?IwOW|">
+                                                    <field name="VAR">duracion</field>
+                                                  </block>
+                                                </value>
+                                                <next>
+                                                  <block type="base_delay" id="7#r?$k_42!muIV++Az*o">
+                                                    <field name="unite">m</field>
+                                                    <value name="DELAY_TIME">
+                                                      <shadow type="math_number" id="23*=F$0sYe5NY%%FYaUX">
+                                                        <field name="NUM">1</field>
+                                                      </shadow>
+                                                      <block type="variables_get" id="LSw:d4@SD=RE%@Xg*l1T">
+                                                        <field name="VAR">retardo</field>
+                                                      </block>
+                                                    </value>
+                                                    <next>
+                                                      <block type="masaylo_BUZZER_PLAY" id="fRvpvA|VxZ;NNAryurFp">
+                                                        <value name="frecuencia">
+                                                          <shadow type="math_number" id="6HjZyOm6q9Rpq+q:sXd-">
+                                                            <field name="NUM">1000</field>
+                                                          </shadow>
+                                                          <block type="variables_get" id="YfkeSvIN_^I)Lr88D[SG">
+                                                            <field name="VAR">re</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="duracion">
+                                                          <shadow type="math_number" id="KYrUYH#rEbMP%D[}D4wr">
+                                                            <field name="NUM">1000</field>
+                                                          </shadow>
+                                                          <block type="variables_get" id="Lq{E6^tAsq]SfLdXs6JA">
+                                                            <field name="VAR">duracion</field>
+                                                          </block>
+                                                        </value>
+                                                        <next>
+                                                          <block type="base_delay" id="t3t(31?YXP}mZW!NW0J9">
+                                                            <field name="unite">m</field>
+                                                            <value name="DELAY_TIME">
+                                                              <shadow type="math_number" id="23*=F$0sYe5NY%%FYaUX">
+                                                                <field name="NUM">1</field>
+                                                              </shadow>
+                                                              <block type="variables_get" id="X$3kjc^jHUB-5[$U(D^|">
+                                                                <field name="VAR">retardo</field>
+                                                              </block>
+                                                            </value>
+                                                            <next>
+                                                              <block type="masaylo_BUZZER_PLAY" id="Az1)KC5?5[Fsd}F;(]`5">
+                                                                <value name="frecuencia">
+                                                                  <shadow type="math_number" id="6HjZyOm6q9Rpq+q:sXd-">
+                                                                    <field name="NUM">1000</field>
+                                                                  </shadow>
+                                                                  <block type="variables_get" id="C$+;Q0j:RUIPYh*vcA7)">
+                                                                    <field name="VAR">mi</field>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="duracion">
+                                                                  <shadow type="math_number" id="KYrUYH#rEbMP%D[}D4wr">
+                                                                    <field name="NUM">1000</field>
+                                                                  </shadow>
+                                                                  <block type="variables_get" id="2ui|Kd:jY)1@9;;l$^h6">
+                                                                    <field name="VAR">duracion</field>
+                                                                  </block>
+                                                                </value>
+                                                                <next>
+                                                                  <block type="base_delay" id="|:x5yO|9{bLpugjhDT/+">
+                                                                    <field name="unite">m</field>
+                                                                    <value name="DELAY_TIME">
+                                                                      <shadow type="math_number" id="23*=F$0sYe5NY%%FYaUX">
+                                                                        <field name="NUM">1</field>
+                                                                      </shadow>
+                                                                      <block type="variables_get" id=":QtQjxk8q4Bcro]CGfYw">
+                                                                        <field name="VAR">retardo</field>
+                                                                      </block>
+                                                                    </value>
+                                                                    <next>
+                                                                      <block type="masaylo_BUZZER_PLAY" id="W}1L@f}66IwITDu?*4uk">
+                                                                        <value name="frecuencia">
+                                                                          <shadow type="math_number" id="6HjZyOm6q9Rpq+q:sXd-">
+                                                                            <field name="NUM">1000</field>
+                                                                          </shadow>
+                                                                          <block type="variables_get" id="4jBH=;`}-0_7UU5W_u*9">
+                                                                            <field name="VAR">fa</field>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="duracion">
+                                                                          <shadow type="math_number" id="KYrUYH#rEbMP%D[}D4wr">
+                                                                            <field name="NUM">1000</field>
+                                                                          </shadow>
+                                                                          <block type="variables_get" id="5h{eA~b4aGNkK8$Wnt[V">
+                                                                            <field name="VAR">duracion</field>
+                                                                          </block>
+                                                                        </value>
+                                                                        <next>
+                                                                          <block type="base_delay" id="8tm?(|CN}4=R~)`%(Vh$">
+                                                                            <field name="unite">m</field>
+                                                                            <value name="DELAY_TIME">
+                                                                              <shadow type="math_number" id="23*=F$0sYe5NY%%FYaUX">
+                                                                                <field name="NUM">1</field>
+                                                                              </shadow>
+                                                                              <block type="variables_get" id=".NVu+(quIH$L.-qG`LDe">
+                                                                                <field name="VAR">retardo</field>
+                                                                              </block>
+                                                                            </value>
+                                                                            <next>
+                                                                              <block type="masaylo_BUZZER_PLAY" id="vuFXaEp[Mv1oosyEj.sW">
+                                                                                <value name="frecuencia">
+                                                                                  <shadow type="math_number" id="6HjZyOm6q9Rpq+q:sXd-">
+                                                                                    <field name="NUM">1000</field>
+                                                                                  </shadow>
+                                                                                  <block type="variables_get" id="cfc~?cqBYhP;pdxL!Z}Y">
+                                                                                    <field name="VAR">sol</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <value name="duracion">
+                                                                                  <shadow type="math_number" id="KYrUYH#rEbMP%D[}D4wr">
+                                                                                    <field name="NUM">1000</field>
+                                                                                  </shadow>
+                                                                                  <block type="variables_get" id="qILAXDQcI(i_s3H_ITmi">
+                                                                                    <field name="VAR">duracion</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <next>
+                                                                                  <block type="base_delay" id=",26%+Hj.1;sl{HtL2G(:">
+                                                                                    <field name="unite">m</field>
+                                                                                    <value name="DELAY_TIME">
+                                                                                      <shadow type="math_number" id="23*=F$0sYe5NY%%FYaUX">
+                                                                                        <field name="NUM">1</field>
+                                                                                      </shadow>
+                                                                                      <block type="variables_get" id="9pv6T2nWBZ|!/)ATG1r@">
+                                                                                        <field name="VAR">retardo</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                    <next>
+                                                                                      <block type="masaylo_BUZZER_PLAY" id="{ZEA2{w=A-!]MI{j^{7`">
+                                                                                        <value name="frecuencia">
+                                                                                          <shadow type="math_number" id="6HjZyOm6q9Rpq+q:sXd-">
+                                                                                            <field name="NUM">1000</field>
+                                                                                          </shadow>
+                                                                                          <block type="variables_get" id="gPb+@[;EGo,dU;@4T2GP">
+                                                                                            <field name="VAR">la</field>
+                                                                                          </block>
+                                                                                        </value>
+                                                                                        <value name="duracion">
+                                                                                          <shadow type="math_number" id="KYrUYH#rEbMP%D[}D4wr">
+                                                                                            <field name="NUM">1000</field>
+                                                                                          </shadow>
+                                                                                          <block type="variables_get" id="E^)!5*@Vp`dh4zG0?1ZU">
+                                                                                            <field name="VAR">duracion</field>
+                                                                                          </block>
+                                                                                        </value>
+                                                                                        <next>
+                                                                                          <block type="base_delay" id="TgP@i-(~%Q[S#O?Azk%^">
+                                                                                            <field name="unite">m</field>
+                                                                                            <value name="DELAY_TIME">
+                                                                                              <shadow type="math_number" id="23*=F$0sYe5NY%%FYaUX">
+                                                                                                <field name="NUM">1</field>
+                                                                                              </shadow>
+                                                                                              <block type="variables_get" id="|4_3mmej!HUUd,6)WSlq">
+                                                                                                <field name="VAR">retardo</field>
+                                                                                              </block>
+                                                                                            </value>
+                                                                                            <next>
+                                                                                              <block type="masaylo_BUZZER_PLAY" id="::e7lNp/puXjnM*[-1wo">
+                                                                                                <value name="frecuencia">
+                                                                                                  <shadow type="math_number" id="6HjZyOm6q9Rpq+q:sXd-">
+                                                                                                    <field name="NUM">1000</field>
+                                                                                                  </shadow>
+                                                                                                  <block type="variables_get" id="iT/O/}eP3P?~b`eA#`w8">
+                                                                                                    <field name="VAR">si</field>
+                                                                                                  </block>
+                                                                                                </value>
+                                                                                                <value name="duracion">
+                                                                                                  <shadow type="math_number" id="KYrUYH#rEbMP%D[}D4wr">
+                                                                                                    <field name="NUM">1000</field>
+                                                                                                  </shadow>
+                                                                                                  <block type="variables_get" id="/_UA`}VzN1m!;/).LD31">
+                                                                                                    <field name="VAR">duracion</field>
+                                                                                                  </block>
+                                                                                                </value>
+                                                                                                <next>
+                                                                                                  <block type="base_delay" id="MI^jw6REI=JFxlJ:j{x{">
+                                                                                                    <field name="unite">m</field>
+                                                                                                    <value name="DELAY_TIME">
+                                                                                                      <shadow type="math_number" id="23*=F$0sYe5NY%%FYaUX">
+                                                                                                        <field name="NUM">1</field>
+                                                                                                      </shadow>
+                                                                                                      <block type="variables_get" id="kk48CTqA7enow{YTZ/EA">
+                                                                                                        <field name="VAR">retardo</field>
+                                                                                                      </block>
+                                                                                                    </value>
+                                                                                                  </block>
+                                                                                                </next>
+                                                                                              </block>
+                                                                                            </next>
+                                                                                          </block>
+                                                                                        </next>
+                                                                                      </block>
+                                                                                    </next>
+                                                                                  </block>
+                                                                                </next>
+                                                                              </block>
+                                                                            </next>
+                                                                          </block>
+                                                                        </next>
+                                                                      </block>
+                                                                    </next>
+                                                                  </block>
+                                                                </next>
+                                                              </block>
+                                                            </next>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
