@@ -13,42 +13,72 @@
         <field name="IRRight">A1</field>
         <next>
           <block type="controls_if" id="sD9jkT4]YCL!MgVd|Ql~">
-            <mutation elseif="1" else="1"></mutation>
+            <mutation elseif="2" else="1"></mutation>
             <value name="IF0">
-              <block type="masaylo_blackleft" id="{.HR)Q*o!o.(H]sH;(`H"></block>
+              <block type="logic_operation" id="-H_;oT2m?6~tf@n@;ko7">
+                <field name="OP">and</field>
+                <value name="A">
+                  <block type="masaylo_blackleft" id="{.HR)Q*o!o.(H]sH;(`H"></block>
+                </value>
+                <value name="B">
+                  <block type="masaylo_blankright" id="jBPm#K4r+MN0M=eRXdDx"></block>
+                </value>
+              </block>
             </value>
             <statement name="DO0">
               <block type="masaylo_velocidad" id="=G5(SJfy_2U(5~%K4=yt">
-                <field name="masaylo_move_choice">RIGHT</field>
+                <field name="masaylo_move_choice">LEFT</field>
                 <value name="masaylo_velocity">
                   <shadow type="math_number" id="wJ$$3KS6mfi/8Y.z:iV/">
-                    <field name="NUM">60</field>
+                    <field name="NUM">55</field>
                   </shadow>
                 </value>
               </block>
             </statement>
             <value name="IF1">
-              <block type="masaylo_blackright" id="bBbVm%rUJqQ=Z~=j@Ea*"></block>
+              <block type="logic_operation" id="SSgrS4dfU)Mhng,_XcOD">
+                <field name="OP">and</field>
+                <value name="A">
+                  <block type="masaylo_blankleft" id="q`#x%$2c?Qq9BMCB!Z6v"></block>
+                </value>
+                <value name="B">
+                  <block type="masaylo_blackright" id="bBbVm%rUJqQ=Z~=j@Ea*"></block>
+                </value>
+              </block>
             </value>
             <statement name="DO1">
               <block type="masaylo_velocidad" id="cj3eMr65%w8i9H%T$0_y">
-                <field name="masaylo_move_choice">LEFT</field>
+                <field name="masaylo_move_choice">RIGHT</field>
                 <value name="masaylo_velocity">
                   <shadow type="math_number" id="mBDNSovL1dP;Jrx47FP^">
-                    <field name="NUM">60</field>
+                    <field name="NUM">55</field>
+                  </shadow>
+                </value>
+              </block>
+            </statement>
+            <value name="IF2">
+              <block type="logic_operation" id="zwbt0V$-eskBU[!$/2CQ">
+                <field name="OP">and</field>
+                <value name="A">
+                  <block type="masaylo_blankleft" id="Ki~*!D`@%X@NIS10!K`J"></block>
+                </value>
+                <value name="B">
+                  <block type="masaylo_blankright" id="+/|fw~{RUSSWchbM4!qu"></block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO2">
+              <block type="masaylo_velocidad" id="yTYs=bAQ+V}Shs?!0i:_">
+                <field name="masaylo_move_choice">FORWARD</field>
+                <value name="masaylo_velocity">
+                  <shadow type="math_number" id="VB4G:jzcBx/v}s@q07(m">
+                    <field name="NUM">55</field>
                   </shadow>
                 </value>
               </block>
             </statement>
             <statement name="ELSE">
-              <block type="masaylo_velocidad" id="yTYs=bAQ+V}Shs?!0i:_">
-                <field name="masaylo_move_choice">FORWARD</field>
-                <value name="masaylo_velocity">
-                  <shadow type="math_number" id="VB4G:jzcBx/v}s@q07(m">
-                    <field name="NUM">60</field>
-                  </shadow>
-                </value>
-              </block>
+              <block type="masaylo_alto" id="gdGL~FxmKq3Z_V5Gz@aY"></block>
             </statement>
           </block>
         </next>

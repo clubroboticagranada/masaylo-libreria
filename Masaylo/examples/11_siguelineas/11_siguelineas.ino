@@ -1,21 +1,20 @@
 #include <Masaylo.h>
 Masaylo m;
 
-//no defs
-
-
 void setup() {
-  m.init(6,7,8,11,12,13);
-  m.infrarrojos(A0,A1);
+  m.init(6, 7, 8, 11, 12, 13);
+  m.infrarrojos(A0, A1);
 }
 
 void loop() {
-  if ((m.nIzquierda())) {
-    m.derecha(153); // RIGHT
-  } else if ((m.nDerecha())) {
-    m.izquierda(153); // LEFT
+  if ((m.nIzquierda()) & (m.bDerecha())) {
+    m.izquierda(140); // LEFT
+  } else if ((m.bIzquierda()) & (m.nDerecha())) {
+    m.derecha(140); // RIGHT
+  } else if ((m.bIzquierda()) & (m.bDerecha())) {
+    m.adelante(140); // FORWARD
   } else {
-    m.adelante(153); // FORWARD
+    m.alto();
   }
 
 }
