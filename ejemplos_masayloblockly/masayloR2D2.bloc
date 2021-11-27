@@ -1,0 +1,695 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <toolbox>toolbox_arduino_all</toolbox>
+  <block type="procedures_defnoreturn" id="g*|,N-|T6hVma%vX|1Ox" x="1450" y="-549">
+    <field name="NAME">frase2</field>
+    <statement name="STACK">
+      <block type="variables_set" id="4qAZ=i.hzFw@U:`E$u#e">
+        <field name="VAR">k</field>
+        <value name="VALUE">
+          <block type="math_random_int" id="*K][)O@O--Jw|,ih#CL3">
+            <value name="FROM">
+              <block type="math_number" id="Is}AM;(SwSG!EeST45#o">
+                <field name="NUM">1000</field>
+              </block>
+            </value>
+            <value name="TO">
+              <block type="math_number" id="upX.a@Km@C6XsB(sOPxq">
+                <field name="NUM">2000</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="controls_for" id="}LYsFc.R@q*0j38N)|Uw">
+            <field name="VAR">i</field>
+            <value name="FROM">
+              <block type="math_number" id="aZ(x1zQ(!,I0$nt$-%%{">
+                <field name="NUM">0</field>
+              </block>
+            </value>
+            <value name="TO">
+              <block type="math_random_int" id="xnD1!n3wvGo]rKJe#1Fy">
+                <value name="FROM">
+                  <block type="math_number" id="Pd#pyS|9_UkTw,wHgoaU">
+                    <field name="NUM">100</field>
+                  </block>
+                </value>
+                <value name="TO">
+                  <block type="math_number" id="];J3GL^:^$*QejLzIzYd">
+                    <field name="NUM">2000</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="BY">
+              <block type="math_number" id="1`{;he*8zcryL(M4z8Zy">
+                <field name="NUM">1</field>
+              </block>
+            </value>
+            <statement name="DO">
+              <block type="masaylo_BUZZER_PLAY" id="x]-p2!{7_Ym^]4Vx[_RW">
+                <value name="frecuencia">
+                  <shadow type="math_number" id=".0uG?|kOF[Wqm(3p=1la">
+                    <field name="NUM">1000</field>
+                  </shadow>
+                  <block type="math_arithmetic" id="jA9L6_.4WJq.(#$K*-/y">
+                    <field name="OP">ADD</field>
+                    <value name="A">
+                      <block type="variables_get" id="Ls}22qDEKr]QY7Ub{7#6">
+                        <field name="VAR">k</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="math_arithmetic" id="F|4.`Ib/-C4?UgN+!%ak">
+                        <field name="OP">MULTIPLY</field>
+                        <value name="A">
+                          <block type="variables_get" id="qj@!5+%vxe,KN:_!3IjY">
+                            <field name="VAR">i</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="math_number" id="Ky3g(1iYP-8g#73c+-_g">
+                            <field name="NUM">2</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="duracion">
+                  <shadow type="math_number" id="**_[jbQ/@$orc2^(i2.D">
+                    <field name="NUM">1000</field>
+                  </shadow>
+                  <block type="math_random_int" id="cB(hv5O.C#q[wA6+,^Mu">
+                    <value name="FROM">
+                      <block type="math_number" id="0!zDtx7I[L4;UGK?B_v#">
+                        <field name="NUM">0.9</field>
+                      </block>
+                    </value>
+                    <value name="TO">
+                      <block type="math_number" id="buj|EGm@nN`tvYR@jO3`">
+                        <field name="NUM">2</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </statement>
+            <next>
+              <block type="controls_for" id="vZ,60l,:IBvbq-msnw_%">
+                <field name="VAR">i</field>
+                <value name="FROM">
+                  <block type="math_number" id="=g{LUNr(hrqP@VU3Xu0d">
+                    <field name="NUM">0</field>
+                  </block>
+                </value>
+                <value name="TO">
+                  <block type="math_random_int" id="[PbU:y%GcrGLP0^?7Q}E">
+                    <value name="FROM">
+                      <block type="math_number" id="|cU1n$BQAyI.)xA%-L*I">
+                        <field name="NUM">100</field>
+                      </block>
+                    </value>
+                    <value name="TO">
+                      <block type="math_number" id="vs]lm1z:{XQ2_[d.[_+2">
+                        <field name="NUM">1000</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="BY">
+                  <block type="math_number" id="[thP9c@t.@hq5~/LCrDx">
+                    <field name="NUM">1</field>
+                  </block>
+                </value>
+                <statement name="DO">
+                  <block type="masaylo_BUZZER_PLAY" id="+}q,S2NbY2FD/$!JpOdY">
+                    <value name="frecuencia">
+                      <shadow type="math_number" id=".0uG?|kOF[Wqm(3p=1la">
+                        <field name="NUM">1000</field>
+                      </shadow>
+                      <block type="math_arithmetic" id="Y})HHp#H(8RusQ~okk;b">
+                        <field name="OP">ADD</field>
+                        <value name="A">
+                          <block type="variables_get" id="Y}o.{$q%d2[Bi{28Hs#S">
+                            <field name="VAR">k</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="math_arithmetic" id="t,#e%P2YtCPvx#^wM|cx">
+                            <field name="OP">MULTIPLY</field>
+                            <value name="A">
+                              <block type="variables_get" id="x5h2t7pmD1af?|;5,6wb">
+                                <field name="VAR">i</field>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <block type="math_number" id=".Y6l:}pchPvgvvHlT;[Q">
+                                <field name="NUM">-10</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="duracion">
+                      <shadow type="math_number" id=":O+{/FPU7u/ibK$-SB%+">
+                        <field name="NUM">1000</field>
+                      </shadow>
+                      <block type="math_random_int" id="~^=~YGQ*9_uytSos*UBW">
+                        <value name="FROM">
+                          <block type="math_number" id="-XGa~/wZd80yn@G$=bL;">
+                            <field name="NUM">0.9</field>
+                          </block>
+                        </value>
+                        <value name="TO">
+                          <block type="math_number" id=".bQ86*?@r=7m~qnW8lr~">
+                            <field name="NUM">2</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </statement>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="procedures_defnoreturn" id="Hx#G:MpSbTw;=bFip7wI" x="286" y="-386">
+    <field name="NAME">frase1</field>
+    <statement name="STACK">
+      <block type="variables_set" id="1-FE1Ey_(Ede1B5bl1NB">
+        <field name="VAR">k</field>
+        <value name="VALUE">
+          <block type="math_random_int" id="5GC8L0R^vQAe*H)RgL/C">
+            <value name="FROM">
+              <block type="math_number" id="/q3i1w1HTyqscU:}J$Fv">
+                <field name="NUM">1000</field>
+              </block>
+            </value>
+            <value name="TO">
+              <block type="math_number" id="uYx-ZTD#Q$}Xl0$}Y(}c">
+                <field name="NUM">2000</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="controls_for" id="S+_,H--?EYFLSLKDxfWS">
+            <field name="VAR">i</field>
+            <value name="FROM">
+              <block type="math_number" id="6~EV[5z:;M^2vK}cnpzB">
+                <field name="NUM">0</field>
+              </block>
+            </value>
+            <value name="TO">
+              <block type="math_random_int" id="A+u_h.qa(;ufI;K(:dY=">
+                <value name="FROM">
+                  <block type="math_number" id="-YH`C`[!1Pk4WA(ZS9:h">
+                    <field name="NUM">100</field>
+                  </block>
+                </value>
+                <value name="TO">
+                  <block type="math_number" id="3#$v:d*)AgKQh}BW!cNv">
+                    <field name="NUM">2000</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="BY">
+              <block type="math_number" id="-[*EN=o-I=_%{K+y+M!+">
+                <field name="NUM">1</field>
+              </block>
+            </value>
+            <statement name="DO">
+              <block type="masaylo_BUZZER_PLAY" id="8,cW`@asP;]vPpQ(Y|}$">
+                <value name="frecuencia">
+                  <shadow type="math_number" id=".0uG?|kOF[Wqm(3p=1la">
+                    <field name="NUM">1000</field>
+                  </shadow>
+                  <block type="math_arithmetic" id="x,?pZ`1ZnM`q_rg*D7%N">
+                    <field name="OP">ADD</field>
+                    <value name="A">
+                      <block type="variables_get" id="0*s?`(C[HS[pRZXsej?+">
+                        <field name="VAR">k</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="math_arithmetic" id="(R@Kt|IhID4!nqJ:s}~j">
+                        <field name="OP">MULTIPLY</field>
+                        <value name="A">
+                          <block type="variables_get" id="Q,qIy:,SD+[9Ww~TS3K7">
+                            <field name="VAR">i</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="math_number" id="+W@h29s}W;l9+HPw=Fbi">
+                            <field name="NUM">-2</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="duracion">
+                  <shadow type="math_number" id="**_[jbQ/@$orc2^(i2.D">
+                    <field name="NUM">1000</field>
+                  </shadow>
+                  <block type="math_random_int" id="ge{A:RE:3%2.(:|5LDa4">
+                    <value name="FROM">
+                      <block type="math_number" id="@)./D42haH31Rf?:F@(1">
+                        <field name="NUM">0.9</field>
+                      </block>
+                    </value>
+                    <value name="TO">
+                      <block type="math_number" id="Pu2^u^!lku:f6-WJqz8I">
+                        <field name="NUM">2</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </statement>
+            <next>
+              <block type="controls_for" id="|Tn?UA1Gmo6h})aFMe]5">
+                <field name="VAR">i</field>
+                <value name="FROM">
+                  <block type="math_number" id="F,k1C~YnTdSl;{R1?~%R">
+                    <field name="NUM">0</field>
+                  </block>
+                </value>
+                <value name="TO">
+                  <block type="math_random_int" id="tu~j^[/cS6Ox@%VC/9}Q">
+                    <value name="FROM">
+                      <block type="math_number" id="?=:=dsGgp8hF*2K,a+i.">
+                        <field name="NUM">100</field>
+                      </block>
+                    </value>
+                    <value name="TO">
+                      <block type="math_number" id="FH_963)}MuEC4rVPyIw(">
+                        <field name="NUM">1000</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="BY">
+                  <block type="math_number" id="E/T`V5rTENX(F_Sm|sC$">
+                    <field name="NUM">1</field>
+                  </block>
+                </value>
+                <statement name="DO">
+                  <block type="masaylo_BUZZER_PLAY" id="d4O9E]f|fx|m:{B^b1hz">
+                    <value name="frecuencia">
+                      <shadow type="math_number" id=".0uG?|kOF[Wqm(3p=1la">
+                        <field name="NUM">1000</field>
+                      </shadow>
+                      <block type="math_arithmetic" id="XSE2xE7wksTlh}MC-vk5">
+                        <field name="OP">ADD</field>
+                        <value name="A">
+                          <block type="variables_get" id="E=DrhRpHt,Lpc|evIPOm">
+                            <field name="VAR">k</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="math_arithmetic" id="3mrXg,=-m}Ox*6(02.1E">
+                            <field name="OP">MULTIPLY</field>
+                            <value name="A">
+                              <block type="variables_get" id="KpMpVPIHig|7V;%7O;$0">
+                                <field name="VAR">i</field>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <block type="math_number" id=",9=P2s*E*d5)^1(oAZ$Y">
+                                <field name="NUM">10</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="duracion">
+                      <shadow type="math_number" id=":O+{/FPU7u/ibK$-SB%+">
+                        <field name="NUM">1000</field>
+                      </shadow>
+                      <block type="math_random_int" id="W1S#Zv5l[QKtiO=[w/Mn">
+                        <value name="FROM">
+                          <block type="math_number" id="+}:ABIAl,VWS=bAZ?@%A">
+                            <field name="NUM">0.9</field>
+                          </block>
+                        </value>
+                        <value name="TO">
+                          <block type="math_number" id="|ic^Qb$yZp}gD_=Y,%dm">
+                            <field name="NUM">2</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </statement>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="masaylo_arranca" id="zsgfox7K3t.0PuQ,|ttq" x="-352" y="-196">
+    <next>
+      <block type="masaylo_SERVOS_INIT" id="}AS5zo2p$VkY3ky]GKXZ">
+        <field name="cabeza">5</field>
+        <field name="brazo">4</field>
+        <next>
+          <block type="variables_set_init" id="Iuy](|V?y`;Os}tS?nTR">
+            <field name="VAR">v</field>
+            <field name="VARIABLE_SETTYPE_TYPE">NUMBER</field>
+            <value name="VALUE">
+              <block type="math_number" id="1!F)m.w=D5,[..bKGf!E">
+                <field name="NUM">0</field>
+              </block>
+            </value>
+            <next>
+              <block type="variables_set_init" id="_]7)[_RNFr*(=0_1^5Y+">
+                <field name="VAR">i</field>
+                <field name="VARIABLE_SETTYPE_TYPE">NUMBER</field>
+                <value name="VALUE">
+                  <block type="math_number" id="cxf9wS;G6Tcv~-`CR:K[">
+                    <field name="NUM">0</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="variables_set_init" id="XvW-p@?)Q?:D]%!8M`u2">
+                    <field name="VAR">k</field>
+                    <field name="VARIABLE_SETTYPE_TYPE">NUMBER</field>
+                    <value name="VALUE">
+                      <block type="math_number" id="$j-#OLr$2Ay.)^s9qi}$">
+                        <field name="NUM">0</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="masaylo_BUZZER_INIT" id="GBMsB(dpau,Y!?-cwN/E">
+                        <field name="buzzer">1</field>
+                        <next>
+                          <block type="masaylo_GIRA_CABEZA" id="KH^O4_bb|Nq?l9_%^_eT">
+                            <value name="anguloCabeza">
+                              <shadow type="math_number" id="_/?Dc||]Um.h/91oZ6vo">
+                                <field name="NUM">90</field>
+                              </shadow>
+                              <block type="math_random_int" id="qLAyci45EgNzqjKFwssS">
+                                <value name="FROM">
+                                  <block type="math_number" id="JtD#~~|1ab=S$:5l$zLf">
+                                    <field name="NUM">10</field>
+                                  </block>
+                                </value>
+                                <value name="TO">
+                                  <block type="math_number" id="+=sRG37Aa[WfuE/bU71.">
+                                    <field name="NUM">170</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="procedures_callnoreturn" id="Bytm12v?A=w|(}JL1Zp4">
+                                <mutation name="gorjeo"></mutation>
+                                <next>
+                                  <block type="base_delay" id="xR28+X$ID?bDqkD7-!CO">
+                                    <field name="unite">m</field>
+                                    <value name="DELAY_TIME">
+                                      <shadow type="math_number" id="vnuKh$#i26Q]%j|1}R)r">
+                                        <field name="NUM">1</field>
+                                      </shadow>
+                                      <block type="math_random_int" id="Z~S5M50U@x,EX!B;84gH">
+                                        <value name="FROM">
+                                          <block type="math_number" id="8MzyiW~sfp1}/SF$lY^0">
+                                            <field name="NUM">2000</field>
+                                          </block>
+                                        </value>
+                                        <value name="TO">
+                                          <block type="math_number" id="F=b)()aUOFA+a?GkB{_e">
+                                            <field name="NUM">4000</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+  <block type="procedures_defnoreturn" id="qjc|hY~4++EbYt`qI*L{" x="304" y="4">
+    <field name="NAME">gorjeo</field>
+    <statement name="STACK">
+      <block type="variables_set" id="=+Kp(q*lA@kg{IHC7t5v">
+        <field name="VAR">v</field>
+        <value name="VALUE">
+          <block type="math_random_int" id="{cuxY;/Xba2,qT2ZX*);">
+            <value name="FROM">
+              <block type="math_number" id="bf:h^SdL%9e]G#m}Gl0D">
+                <field name="NUM">1</field>
+              </block>
+            </value>
+            <value name="TO">
+              <block type="math_number" id="guGtA8h)L:B0-e{sG:29">
+                <field name="NUM">7</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="controls_switch" id="OSB4y@-~T1as!W(6I4B_">
+            <mutation casebreak="5"></mutation>
+            <field name="SWVAR">v</field>
+            <value name="CASE0">
+              <block type="math_number" id=":o;{JH4GIa)pX/54n`HV">
+                <field name="NUM">1</field>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="procedures_callnoreturn" id="Jv,1OJY=@[rZQgn1Y7c@">
+                <mutation name="frase1"></mutation>
+              </block>
+            </statement>
+            <value name="CASE1">
+              <block type="math_number" id="-{c;98%6c;^1Z_hMz-x8">
+                <field name="NUM">2</field>
+              </block>
+            </value>
+            <statement name="DO1">
+              <block type="procedures_callnoreturn" id="ijpdjtpk|s,O]vaOAr/f">
+                <mutation name="frase2"></mutation>
+              </block>
+            </statement>
+            <value name="CASE2">
+              <block type="math_number" id="7763#[p/cuX=_ll2Qn6w">
+                <field name="NUM">3</field>
+              </block>
+            </value>
+            <statement name="DO2">
+              <block type="procedures_callnoreturn" id="PQfF{vo}7s^TLKWi|Jc@">
+                <mutation name="frase1"></mutation>
+                <next>
+                  <block type="procedures_callnoreturn" id="qN;q{?QhY[es-Bl4=Y}b">
+                    <mutation name="frase2"></mutation>
+                  </block>
+                </next>
+              </block>
+            </statement>
+            <value name="CASE3">
+              <block type="math_number" id="8heSnGf}MS3,|WpqI(Ec">
+                <field name="NUM">4</field>
+              </block>
+            </value>
+            <statement name="DO3">
+              <block type="procedures_callnoreturn" id="+zDR|h/OV_K%HtCB7qbp">
+                <mutation name="frase1"></mutation>
+                <next>
+                  <block type="procedures_callnoreturn" id="rP1=^xc,emp|TN2Ntf4?">
+                    <mutation name="frase2"></mutation>
+                    <next>
+                      <block type="procedures_callnoreturn" id="G1ByEdSZoNr%jYmgOZ!`">
+                        <mutation name="frase1"></mutation>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </statement>
+            <value name="CASE4">
+              <block type="math_number" id="]9a]B934r`F3CR1yS5z/">
+                <field name="NUM">5</field>
+              </block>
+            </value>
+            <statement name="DO4">
+              <block type="procedures_callnoreturn" id="JC!p6V`bBYvi6dCgj~rR">
+                <mutation name="frase1"></mutation>
+                <next>
+                  <block type="procedures_callnoreturn" id="mgX){-r0b55Ky1yi8gE(">
+                    <mutation name="frase2"></mutation>
+                    <next>
+                      <block type="procedures_callnoreturn" id="0r10ICp=)1LV?eEHP_9V">
+                        <mutation name="frase1"></mutation>
+                        <next>
+                          <block type="procedures_callnoreturn" id="2aeul:bwQce:alK0sr-|">
+                            <mutation name="frase2"></mutation>
+                            <next>
+                              <block type="procedures_callnoreturn" id=";GYE~6V5.4gzDk~45`:r">
+                                <mutation name="frase1"></mutation>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </statement>
+            <value name="CASE5">
+              <block type="math_number" id="?`0ZG`jcLJ!}hfGka=e^">
+                <field name="NUM">6</field>
+              </block>
+            </value>
+            <statement name="DO5">
+              <block type="procedures_callnoreturn" id="eRR(6E(rbV!xOq7NNPL=">
+                <mutation name="frase2"></mutation>
+                <next>
+                  <block type="procedures_callnoreturn" id="2F=oY6ZZn^5l}~D7l_/+">
+                    <mutation name="frase1"></mutation>
+                    <next>
+                      <block type="procedures_callnoreturn" id="/ky#(#v-SC,gB*q{A/d3">
+                        <mutation name="frase2"></mutation>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </statement>
+            <next>
+              <block type="variables_set" id="8RIg/Ic^J,B4/5ZtqAlv">
+                <field name="VAR">k</field>
+                <value name="VALUE">
+                  <block type="math_number" id="=E,}0PC{pQ%weVtb7+nI">
+                    <field name="NUM">2000</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="controls_for" id="h~u%uS81bT~}L=;GfaR,">
+                    <field name="VAR">i</field>
+                    <value name="FROM">
+                      <block type="math_number" id="9k`,Ib]#Jwe;=%@-KxHy">
+                        <field name="NUM">0</field>
+                      </block>
+                    </value>
+                    <value name="TO">
+                      <block type="math_random_int" id="1Hvg5VW|5I[`7Neay5pI">
+                        <value name="FROM">
+                          <block type="math_number" id=".03];.TBKDnP^6)?|*dr">
+                            <field name="NUM">3</field>
+                          </block>
+                        </value>
+                        <value name="TO">
+                          <block type="math_number" id="GV$X0#c%4(]?BY[an!32">
+                            <field name="NUM">9</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="BY">
+                      <block type="math_number" id="x9MIy1?F(!Ean,gj2p6k">
+                        <field name="NUM">1</field>
+                      </block>
+                    </value>
+                    <statement name="DO">
+                      <block type="masaylo_BUZZER_PLAY" id="`kF+Vr,3_r[q2LtGKLT*">
+                        <value name="frecuencia">
+                          <shadow type="math_number" id="Xd,l$70Dv}i_[`TzjyPi">
+                            <field name="NUM">1000</field>
+                          </shadow>
+                          <block type="math_arithmetic" id=";p.ybH/_e#gXlu{N~sLD">
+                            <field name="OP">ADD</field>
+                            <value name="A">
+                              <block type="variables_get" id="DuPZ2@y5|^f#C1)Um-pG">
+                                <field name="VAR">k</field>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <block type="math_random_int" id="1]V3*~kd6{E@^wW^k(X?">
+                                <value name="FROM">
+                                  <block type="math_number" id="/a:U=LsJ%VdQ!xVA:+$3">
+                                    <field name="NUM">-1700</field>
+                                  </block>
+                                </value>
+                                <value name="TO">
+                                  <block type="math_number" id="s#9~h/XKS#Pg(n%4@{?k">
+                                    <field name="NUM">2000</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="duracion">
+                          <shadow type="math_number" id="_`*rZ{aqkd5G%+Iy#y$4">
+                            <field name="NUM">1000</field>
+                          </shadow>
+                          <block type="math_random_int" id="B|b5V9dj$OdI]9Z/t}wV">
+                            <value name="FROM">
+                              <block type="math_number" id="X3MgV~ns]91c#IYdnHK{">
+                                <field name="NUM">70</field>
+                              </block>
+                            </value>
+                            <value name="TO">
+                              <block type="math_number" id="%(g6X[rR{EnE!j6uma0{">
+                                <field name="NUM">170</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="base_delay" id="@T4|vw~KS5[CULBL~Q@Y">
+                            <field name="unite">m</field>
+                            <value name="DELAY_TIME">
+                              <shadow type="math_number" id="8@Ti?@xa?#~(xdyoR!e3">
+                                <field name="NUM">1</field>
+                              </shadow>
+                              <block type="math_random_int" id="{*RM*Y%0T64_PDvHqWBK">
+                                <value name="FROM">
+                                  <block type="math_number" id="}0]zwL1JC1)9%ORxs1[=">
+                                    <field name="NUM">0</field>
+                                  </block>
+                                </value>
+                                <value name="TO">
+                                  <block type="math_number" id="#R*^UbG}knDkA^{1dE:b">
+                                    <field name="NUM">30</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </statement>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>
