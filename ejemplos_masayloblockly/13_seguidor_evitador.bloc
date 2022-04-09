@@ -1,0 +1,90 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <toolbox>toolbox_arduino_all</toolbox>
+  <block type="masaylo_arranca" id="X.bvczO,vyQzy%Hv+oI-" x="443" y="34">
+    <next>
+      <block type="masaylo_US_INIT" id="qY6vcf]YqD=fX8ub^f)@">
+        <field name="trigger">A2</field>
+        <field name="echo">A3</field>
+        <next>
+          <block type="masaylo_SERVOS_INIT" id="b(WpqA,qZ{a,jK7.Zge;">
+            <field name="cabeza">5</field>
+            <field name="brazo">4</field>
+            <next>
+              <block type="masaylo_GIRA_CABEZA" id="32bJFG8eqBidF/X2}ES0">
+                <value name="anguloCabeza">
+                  <shadow type="math_number" id="/f)9@,qJPs3HPO.r5RGm">
+                    <field name="NUM">90</field>
+                  </shadow>
+                </value>
+                <next>
+                  <block type="controls_if" id="2|,Ya3yI0dL~}h.hS!}K">
+                    <mutation elseif="1" else="1"></mutation>
+                    <value name="IF0">
+                      <block type="intervalle" id="1mLG!UBGd*@$:IjiozY)">
+                        <field name="comp_inf">LT</field>
+                        <field name="comp_sup">LT</field>
+                        <value name="inf">
+                          <block type="math_number" id="?Z]QWyfUk1LZ4qNJtDh!">
+                            <field name="NUM">20</field>
+                          </block>
+                        </value>
+                        <value name="valeur">
+                          <block type="masaylo_getdistance" id=";g2:o.dZef2QzRku8y)D"></block>
+                        </value>
+                        <value name="sup">
+                          <block type="math_number" id="yj$T!j-+XUnD1pQ/B+1G">
+                            <field name="NUM">50</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="DO0">
+                      <block type="masaylo_velocidad" id="8HjllQaDlZt^3xl_B)2L">
+                        <field name="masaylo_move_choice">FORWARD</field>
+                        <value name="masaylo_velocity">
+                          <shadow type="math_number" id="LGX9H4Amr$q5{BTefN8I">
+                            <field name="NUM">75</field>
+                          </shadow>
+                        </value>
+                      </block>
+                    </statement>
+                    <value name="IF1">
+                      <block type="logic_compare" id="3t}DVT-[W)r4?0wLk9)J">
+                        <field name="OP">GTE</field>
+                        <value name="A">
+                          <block type="masaylo_getdistance" id="/Gn/:x}K(@lh;vxspVMX"></block>
+                        </value>
+                        <value name="B">
+                          <shadow type="math_number" id=";JIQI?M#LR^ev(3.nu|4">
+                            <field name="NUM">50</field>
+                          </shadow>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="DO1">
+                      <block type="masaylo_alto" id="[x{28T55/azyZabW;72g"></block>
+                    </statement>
+                    <statement name="ELSE">
+                      <block type="masaylo_alto" id="H_7JjWpK9f(e],vk=}.a">
+                        <next>
+                          <block type="masaylo_velocidad" id="tbW^`0CJ4AgJ^t@.:OK?">
+                            <field name="masaylo_move_choice">BACKWARD</field>
+                            <value name="masaylo_velocity">
+                              <shadow type="math_number" id="?Hq@{AaIw{o*!wH_dZ,C">
+                                <field name="NUM">75</field>
+                              </shadow>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </statement>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
