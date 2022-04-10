@@ -1,0 +1,167 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <toolbox>toolbox_arduino_all</toolbox>
+  <block type="masaylo_arranca" id="t.T,3))LY5Lfp,u7=tfB" x="354" y="14">
+    <next>
+      <block type="masaylo_IR_INIT" id="~oABWh6;Df[#suDN*8~b">
+        <field name="IRLeft">A0</field>
+        <field name="IRRight">A1</field>
+        <next>
+          <block type="masaylo_ENCODER_INIT" id="/Y3rJ:vnE;AL^/shLTeI">
+            <field name="encLeft">2</field>
+            <field name="encRight">3</field>
+            <field name="encdiameter">7.5</field>
+            <next>
+              <block type="masaylo_velocidad" id="YHUb(U11VF[R7%zqLeaR">
+                <field name="masaylo_move_choice">FORWARD</field>
+                <value name="masaylo_velocity">
+                  <shadow type="math_number" id="S5%bXG]hj^;l1}V!H2=~">
+                    <field name="NUM">75</field>
+                  </shadow>
+                </value>
+                <next>
+                  <block type="controls_if" id="(B_O6my}PVHc[,#3,DM.">
+                    <mutation elseif="2"></mutation>
+                    <value name="IF0">
+                      <block type="logic_operation" id="vD=jK*W*;vK[we}/t*p5">
+                        <field name="OP">and</field>
+                        <value name="A">
+                          <block type="masaylo_blackleft" id="W%)u$1PajstpH3ay{!r7"></block>
+                        </value>
+                        <value name="B">
+                          <block type="masaylo_blankright" id="}Yc.sOWj06Enau;H?Zn!"></block>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="DO0">
+                      <block type="masaylo_alto" id="WfA;~9N8l{tLmOH,!N.H">
+                        <next>
+                          <block type="masaylo_velocidad" id="aSt^Gk.kR0{x9P~(e{J[">
+                            <field name="masaylo_move_choice">RIGHT</field>
+                            <value name="masaylo_velocity">
+                              <shadow type="math_number" id="F{HFSvAdA.XRI;iSopu1">
+                                <field name="NUM">75</field>
+                              </shadow>
+                            </value>
+                            <next>
+                              <block type="masaylo_ENCODER_ANGULO" id="8o^3=nGu+yvrdEdre_j9">
+                                <value name="angulo">
+                                  <shadow type="math_number" id="x~:BP0SG{|5K2tHaNVn@">
+                                    <field name="NUM">90</field>
+                                  </shadow>
+                                </value>
+                                <next>
+                                  <block type="masaylo_alto" id="I,lk37!)z%b(kf*qYg=y"></block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </statement>
+                    <value name="IF1">
+                      <block type="logic_operation" id="*jd{Y,,e%8R(I(b#M;DN">
+                        <field name="OP">and</field>
+                        <value name="A">
+                          <block type="masaylo_blackright" id="U+~4Wa,F)UBxuZ%g7SSU"></block>
+                        </value>
+                        <value name="B">
+                          <block type="masaylo_blankleft" id="C/$L~Tbp5e.Y^7--=_uT"></block>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="DO1">
+                      <block type="masaylo_alto" id="lsdAE8`IuQoeBd1VvZQG">
+                        <next>
+                          <block type="masaylo_velocidad" id="IfZ4cF8?sw-RI$Q[Y_SX">
+                            <field name="masaylo_move_choice">LEFT</field>
+                            <value name="masaylo_velocity">
+                              <shadow type="math_number" id="E!6`m!M;}rtL9{)q#yp~">
+                                <field name="NUM">75</field>
+                              </shadow>
+                            </value>
+                            <next>
+                              <block type="masaylo_ENCODER_ANGULO" id="eP*wgVOl)h_`T4IJ!.L$">
+                                <value name="angulo">
+                                  <shadow type="math_number" id="oVjRB)3j7Uk$X^ljGtc:">
+                                    <field name="NUM">90</field>
+                                  </shadow>
+                                </value>
+                                <next>
+                                  <block type="masaylo_alto" id="LASy?!}rq;ry4GQJ@.*_"></block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </statement>
+                    <value name="IF2">
+                      <block type="logic_operation" id=",yjYu1Hi~)tRpRGir~;s">
+                        <field name="OP">and</field>
+                        <value name="A">
+                          <block type="masaylo_blackright" id="]%v-C5qLr`[lki-jLW(s"></block>
+                        </value>
+                        <value name="B">
+                          <block type="masaylo_blackleft" id="wev,MLY%yt%f3MSv!!P/"></block>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="DO2">
+                      <block type="masaylo_alto" id="PWKp3`xZV|aNdDy}53`y">
+                        <next>
+                          <block type="masaylo_velocidad" id="d_#qh4{p3*hg=ig1aw=.">
+                            <field name="masaylo_move_choice">BACKWARD</field>
+                            <value name="masaylo_velocity">
+                              <shadow type="math_number" id="tX;4NBPI4C9c{m))V0Se">
+                                <field name="NUM">75</field>
+                              </shadow>
+                            </value>
+                            <next>
+                              <block type="masaylo_ENCODER_DISTANCIA" id=")rvl9gDt2~h4h%Rm;HDz">
+                                <value name="distancia">
+                                  <shadow type="math_number" id="b,~)(o4HZ^*GVreWV(*c">
+                                    <field name="NUM">10</field>
+                                  </shadow>
+                                </value>
+                                <next>
+                                  <block type="masaylo_alto" id="2/.pR+-g9?f%pk7yrH0K">
+                                    <next>
+                                      <block type="masaylo_velocidad" id=":ue5;hWXw7ZcWPLQ4y^w">
+                                        <field name="masaylo_move_choice">LEFT</field>
+                                        <value name="masaylo_velocity">
+                                          <shadow type="math_number" id="1~M;7;{Ek.zWMvLyTBG1">
+                                            <field name="NUM">75</field>
+                                          </shadow>
+                                        </value>
+                                        <next>
+                                          <block type="masaylo_ENCODER_ANGULO" id="/x]+VB/P@uJRTrV-%x4*">
+                                            <value name="angulo">
+                                              <shadow type="math_number" id="0zeu!PO8Up.eZ_JL*IX6">
+                                                <field name="NUM">180</field>
+                                              </shadow>
+                                            </value>
+                                            <next>
+                                              <block type="masaylo_alto" id="2#C$;zPFg1`3lYB,JO6;"></block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </statement>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
