@@ -51,7 +51,7 @@
                                     <comment pinned="false" h="80" w="160">Mira a izquierda</comment>
                                     <value name="anguloCabeza">
                                       <shadow type="math_number" id="NA]9V-*MPYbn)?UcXcp+">
-                                        <field name="NUM">0</field>
+                                        <field name="NUM">180</field>
                                       </shadow>
                                     </value>
                                     <next>
@@ -59,7 +59,7 @@
                                         <field name="unite">m</field>
                                         <value name="DELAY_TIME">
                                           <shadow type="math_number" id="dP=@dBIamJBCdXQkuuQ2">
-                                            <field name="NUM">500</field>
+                                            <field name="NUM">1000</field>
                                           </shadow>
                                         </value>
                                         <next>
@@ -122,6 +122,25 @@
                                                 </next>
                                               </block>
                                             </statement>
+                                            <next>
+                                              <block type="masaylo_GIRA_CABEZA" id="X/V|fcHa#+!UIn0=8I%t">
+                                                <value name="anguloCabeza">
+                                                  <shadow type="math_number" id="S%k%n![F6`cQPNlWc/?K">
+                                                    <field name="NUM">90</field>
+                                                  </shadow>
+                                                </value>
+                                                <next>
+                                                  <block type="base_delay" id="4`zcCBLWIVmwNkKnwjwQ">
+                                                    <field name="unite">m</field>
+                                                    <value name="DELAY_TIME">
+                                                      <shadow type="math_number" id="?JV?O1?@hA]4,7Jk+fpW">
+                                                        <field name="NUM">1000</field>
+                                                      </shadow>
+                                                    </value>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
                                           </block>
                                         </next>
                                       </block>
