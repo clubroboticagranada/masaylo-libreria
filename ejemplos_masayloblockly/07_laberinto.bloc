@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <toolbox>toolbox_6</toolbox>
+  <toolbox>toolbox_arduino_all</toolbox>
   <block type="masaylo_arranca_personalizado" id="5ieU1Dg!nIoHwK,#5b3g" x="8" y="-356">
     <field name="MIP">6</field>
     <field name="MIA">7</field>
@@ -8,9 +8,9 @@
     <field name="MDA">12</field>
     <field name="MDB">13</field>
     <next>
-      <block type="masaylo_US_INIT" id="Z,C])f;8`H@/BCjsSKk,">
-        <field name="trigger">16</field>
-        <field name="echo">17</field>
+      <block type="masaylo_US_INIT" id="~o*d.v_GSC?%`yYTUy-G">
+        <field name="trigger">A2</field>
+        <field name="echo">A3</field>
         <next>
           <block type="masaylo_SERVOS_INIT" id="Lh1aH%yd]TOtw@C_.^/x">
             <field name="cabeza">5</field>

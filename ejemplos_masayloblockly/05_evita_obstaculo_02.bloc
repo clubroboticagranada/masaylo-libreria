@@ -8,9 +8,9 @@
     <field name="MDA">12</field>
     <field name="MDB">13</field>
     <next>
-      <block type="masaylo_US_INIT" id="Z,C])f;8`H@/BCjsSKk,">
-        <field name="trigger">16</field>
-        <field name="echo">17</field>
+      <block type="masaylo_US_INIT" id="mjds{,iUgsu!p0fQmp{d">
+        <field name="trigger">A2</field>
+        <field name="echo">A3</field>
         <next>
           <block type="masaylo_velocidad" id="1z{G2mDWHceu~IG,cVOo">
             <field name="masaylo_move_choice">FORWARD</field>

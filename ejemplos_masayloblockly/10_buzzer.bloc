@@ -1,12 +1,12 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <toolbox>toolbox_6</toolbox>
-  <block type="masaylo_arranca" id="+XhJBd1faJ?}k}dH)lq_" x="244" y="29">
+  <toolbox>toolbox_arduino_all</toolbox>
+  <block type="masaylo_arranca" id="+XhJBd1faJ?}k}dH)lq_" x="66" y="-311">
     <next>
       <block type="masaylo_BUZZER_INIT" id="ye#^TuQRo@1w/YHZ.C(u">
         <field name="buzzer">1</field>
         <next>
           <block type="variables_const" id="-*Fn.8iQO8N5BfEUy|)4">
-            <field name="VAR">do</field>
+            <field name="VAR">do2</field>
             <field name="VARIABLE_SETTYPE_TYPE">NUMBER</field>
             <value name="VAL_CONST">
               <block type="math_number" id="17Fe_lADTe$Al(wM48FE">
@@ -92,7 +92,7 @@
                                                     <field name="NUM">1000</field>
                                                   </shadow>
                                                   <block type="variables_get" id="TxaB_$^j/y;+-Z[e.y9j">
-                                                    <field name="VAR">do</field>
+                                                    <field name="VAR">do2</field>
                                                   </block>
                                                 </value>
                                                 <value name="duracion">

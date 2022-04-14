@@ -1,14 +1,10 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <toolbox>toolbox_6</toolbox>
-  <block type="serial_init" id="yOLo!pcZ{+PQ#;hHHE,[" x="676" y="25">
-    <field name="pin">0</field>
-    <field name="SPEED">9600</field>
-  </block>
-  <block type="masaylo_arranca" id="ZVTL{DLE9PgiXl4jT:?J" x="284" y="48">
+  <toolbox>toolbox_arduino_all</toolbox>
+  <block type="masaylo_arranca" id="ZVTL{DLE9PgiXl4jT:?J" x="-91" y="-166">
     <next>
-      <block type="masaylo_IR_INIT" id=")(%e|YCy*RS-xQT`NGhQ">
-        <field name="IRLeft">14</field>
-        <field name="IRRight">15</field>
+      <block type="masaylo_IR_INIT" id="Y9XusX_qmk5e3.;)JwxT">
+        <field name="IRLeft">A0</field>
+        <field name="IRRight">A1</field>
         <next>
           <block type="controls_if" id="^7JC#ld(ghg;@dNGGx/~">
             <mutation elseif="2" else="1"></mutation>
@@ -95,5 +91,9 @@
         </next>
       </block>
     </next>
+  </block>
+  <block type="serial_init" id="yOLo!pcZ{+PQ#;hHHE,[" x="301" y="-169">
+    <field name="pin">0</field>
+    <field name="SPEED">9600</field>
   </block>
 </xml>

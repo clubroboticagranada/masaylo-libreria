@@ -1,10 +1,10 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <toolbox>toolbox_6</toolbox>
-  <block type="masaylo_arranca" id="zsgfox7K3t.0PuQ,|ttq" x="296" y="60">
+  <toolbox>toolbox_arduino_all</toolbox>
+  <block type="masaylo_arranca" id="zsgfox7K3t.0PuQ,|ttq" x="115" y="-65">
     <next>
-      <block type="masaylo_US_INIT" id="NthC}h:E!BO3P^UVV~N}">
-        <field name="trigger">16</field>
-        <field name="echo">17</field>
+      <block type="masaylo_US_INIT" id="0;P,ONNr7ptr?|8qGctV">
+        <field name="trigger">A2</field>
+        <field name="echo">A3</field>
         <next>
           <block type="serial_write_line" id="$SyCYyJGwOFY.7~r2j9g">
             <value name="CONTENT">
@@ -38,7 +38,7 @@
       </block>
     </next>
   </block>
-  <block type="serial_init" id="+E;bSIx9DuveQPr7h@.," x="577" y="66">
+  <block type="serial_init" id="+E;bSIx9DuveQPr7h@.," x="424" y="-78">
     <field name="pin">0</field>
     <field name="SPEED">9600</field>
   </block>

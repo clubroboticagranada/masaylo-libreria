@@ -50,7 +50,7 @@
                                 <field name="masaylo_move_choice">LEFT</field>
                                 <value name="masaylo_velocity">
                                   <shadow type="math_number" id="wJ$$3KS6mfi/8Y.z:iV/">
-                                    <field name="NUM">55</field>
+                                    <field name="NUM">75</field>
                                   </shadow>
                                 </value>
                               </block>
@@ -71,7 +71,7 @@
                                 <field name="masaylo_move_choice">RIGHT</field>
                                 <value name="masaylo_velocity">
                                   <shadow type="math_number" id="mBDNSovL1dP;Jrx47FP^">
-                                    <field name="NUM">55</field>
+                                    <field name="NUM">75</field>
                                   </shadow>
                                 </value>
                               </block>
@@ -92,7 +92,7 @@
                                 <field name="masaylo_move_choice">FORWARD</field>
                                 <value name="masaylo_velocity">
                                   <shadow type="math_number" id="VB4G:jzcBx/v}s@q07(m">
-                                    <field name="NUM">55</field>
+                                    <field name="NUM">75</field>
                                   </shadow>
                                 </value>
                                 <next>
