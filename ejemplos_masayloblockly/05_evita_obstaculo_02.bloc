@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <toolbox>toolbox_6</toolbox>
+  <toolbox>toolbox_arduino_all</toolbox>
   <block type="masaylo_arranca_personalizado" id="5ieU1Dg!nIoHwK,#5b3g" x="300" y="-32">
     <field name="MIP">6</field>
     <field name="MIA">7</field>
@@ -16,7 +16,7 @@
             <field name="masaylo_move_choice">FORWARD</field>
             <value name="masaylo_velocity">
               <shadow type="math_number" id=":hfO*aU?;RXgS@lPPZ5u">
-                <field name="NUM">75</field>
+                <field name="NUM">100</field>
               </shadow>
             </value>
             <next>
@@ -84,7 +84,7 @@
                                     <field name="masaylo_move_choice">LEFT</field>
                                     <value name="masaylo_velocity">
                                       <shadow type="math_number" id="ZAaYc^Ncgq9,dK0iA]e4">
-                                        <field name="NUM">75</field>
+                                        <field name="NUM">100</field>
                                       </shadow>
                                     </value>
                                     <next>
@@ -104,7 +104,7 @@
                                     <field name="masaylo_move_choice">RIGHT</field>
                                     <value name="masaylo_velocity">
                                       <shadow type="math_number" id="h|`().:*#EhM}$W=D-P.">
-                                        <field name="NUM">75</field>
+                                        <field name="NUM">100</field>
                                       </shadow>
                                     </value>
                                     <next>
