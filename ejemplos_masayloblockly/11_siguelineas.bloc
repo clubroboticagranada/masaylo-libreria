@@ -1,6 +1,6 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <toolbox>toolbox_arduino_all</toolbox>
-  <block type="masaylo_arranca_personalizado" id="0iSY`6cs;6NyGYtBoUW_" x="305" y="47">
+  <block type="masaylo_arranca_personalizado" id="0iSY`6cs;6NyGYtBoUW_" x="319" y="-23">
     <field name="MIP">6</field>
     <field name="MIA">7</field>
     <field name="MIB">8</field>
